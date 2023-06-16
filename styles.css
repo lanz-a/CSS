@@ -6,3 +6,7 @@
 body {
     padding: 0.25em;
 }
+
+.navbar-brand a{
+    color: #1B3F1E;
+}

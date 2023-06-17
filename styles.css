@@ -17,6 +17,10 @@
     box-sizing: border-box;
 }
 
+body {
+    padding: 0.25em;
+}
+
 h1{
     font-family: "Hanken Grotesk",sans-serif;
     font-weight: 800;
@@ -26,19 +30,15 @@ h1{
     color: var(--lightgreen);
 }
 
-.img-container{
-    width: 20em;
-    height: 30em;
-    border-radius: 2em;
-    overflow: hidden;
-}
-
 .main-pic{
-    width: auto;
-    height: 100%;
-    object-fit: cover;
+    width: 100%;
+    height: auto;
 }
 
-body {
-    padding: 0.25em;
+.col-5 {
+    margin-top: 5em;
+
+    > h1.display-1 {
+        margin-top: 1em;
+    }
 }

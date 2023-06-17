@@ -17,11 +17,10 @@
     box-sizing: border-box;
 }
 
+h1{
+    font-weight: bolder;
+}
+
 body {
     padding: 0.25em;
 }
-
-.navbar-brand{
-    color: var(--maingreen);
-}
-

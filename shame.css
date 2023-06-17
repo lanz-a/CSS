@@ -1,0 +1,7 @@
+/*
+* Farbe wird in -navbar.scss definiert und kann mit !important überschrieben werden
+* Zeile 70: color: var(--#{$prefix}navbar-brand-color);
+*/
+.navbar-brand{
+    color: var(--maingreen) !important;
+}

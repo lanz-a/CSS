@@ -44,8 +44,8 @@ module:
       target:           static
     - source:           site/static/docs/5.2/assets/img/favicons/apple-touch-icon.png
       target:           static/apple-touch-icon.png
-    - source:           site/static/docs/5.2/assets/img/favicons/favicon.ico
-      target:           static/favicon.ico
+    - source:           site/static/docs/5.2/assets/img/favicons/favicon_monstera.ico
+      target:           static/favicon_monstera.ico
 
 params:
   subtitle:             "The most popular HTML, CSS, and JS library in the world."

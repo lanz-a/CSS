@@ -7,8 +7,13 @@
     --lightgrey: #D9D7D7;
 }
 
+@font-face {
+    font-family: Hanken Grotesk;
+    src: url(fonts/HankenGrotesk-Regular.ttf) format('truetype');
+}
+
 * {
-    font-family: sans-serif;
+    font-family: "Hanken Grotesk", sans-serif;
     box-sizing: border-box;
 }
 

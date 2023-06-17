@@ -5,3 +5,47 @@
 .navbar-brand{
     color: var(--maingreen) !important;
 }
+
+/*
+* Navigationsleiste sollte beim Scrollen fixiert sein - funktioniert noch nicht
+* wenn man !important hinzufügt, dann passen die Abstände zwischen den Elementen
+* in der Navigationsleiste nicht mehr
+*/
+.navbar {
+    position: fixed;
+}
+
+/*
+* Macht noch ein paar Löcher in den Text, aber Blocksatz sieht schöner aus :-)
+*/
+p {
+    text-align: justify;
+}
+
+/*
+* Müsste man in der _card.scss ändern, dann muss man nicht !important verwenden
+*/
+.card-title {
+    color: var(--maingreen) !important;
+    font-weight: 600 !important;
+}
+.card {
+    background-color: var(--lightgreen) !important;
+}
+
+/*
+* Zeile 47 in _accordion.scss - dort ändern
+*/
+.accordion-button {
+    &:not(.collapsed) {
+     background-color: var(--lightgreen) !important;
+     }
+ }
+
+/*
+* müsste man in der _buttons.scss bearbeiten
+*/
+.btn-green {
+    color: white !important;
+    background-color: var(--maingreen) !important;
+}

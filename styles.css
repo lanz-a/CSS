@@ -18,7 +18,24 @@
 }
 
 h1{
-    font-weight: bolder;
+    font-family: "Hanken Grotesk",sans-serif;
+    font-weight: 800;
+}
+
+.text-green{
+    color: var(--lightgreen);
+}
+
+.img-container{
+    width: 20em;
+    height: 40em;
+    overflow: hidden;
+}
+
+.main-pic{
+    width: auto;
+    height: 100%;
+    object-fit: cover;
 }
 
 body {

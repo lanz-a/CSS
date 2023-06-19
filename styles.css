@@ -16,11 +16,11 @@ footer {
     width: 100%;
 }
 
-a.navbar-brand {
+footer a.navbar-brand {
     color: var(--lightgreen) !important;
 }
 
-a.nav-link {
+footer a.nav-link {
     color: white !important;
 }
 

@@ -15,12 +15,17 @@ footer {
     min-height: 50px;
     width: 100%;
 }
+
 a.navbar-brand {
     color: var(--lightgreen) !important;
 }
 
-.nav-link {
+a.nav-link {
     color: white !important;
+}
+
+.lead {
+    padding-right: 10em;
 }
 
 :root {
@@ -58,6 +63,16 @@ h1{
 .main-pic{
     width: 100%;
     height: auto;
+    z-index: 1;
+    position: relative;
+}
+
+.branch-pic {
+    width: 40%;
+    height: auto;
+    right: 0;
+    z-index: 2;
+    position: absolute;
 }
 
 @media screen and (max-width: 991px){

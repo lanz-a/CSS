@@ -5,23 +5,22 @@
     <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico"/>
     <!-- Basic CSS -->
     <link rel="stylesheet" type="text/css" href="styles.css">
     <!-- Shame CSS -->
     <link rel="stylesheet" type="text/css" href="shame.css">
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico"/>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <!--JS-->
-    <script type="text/javascript" src="dark_light.js"></script>
 </head>
 <body>
+<!-- Header -->
 <header>
-    <div class="container">
+    <div class="container mb-5">
         <nav class="navbar navbar-light navbar-expand-lg">
-            <a class="navbar-brand" href="#"><img src="img/logo_80x80.png" alt="Monstera Logo"> Monstera</a>
+            <a class="navbar-brand" href="#"><img src="img/logo_80x80.png" alt="Monstera Logo">Monstera</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mainNavigation"
                     aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -43,7 +42,7 @@
                 </ul>
             </div>
             <div class="d-flex align-items-center ml-auto">
-                <div class="dropdown mr-2">
+                <div class="dropdown me-2">
                     <button type="button" class="btn btn-secondary dropdown-toggle mx-2" id="languageDropdown"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         DE
@@ -62,96 +61,110 @@
             </div>
         </nav>
     </div>
-
 </header>
-<wrapper>
+<!-- Main -->
+<main>
     <!-- Übersicht -->
-    <div class="container" id="uebersicht">
+    <div class="container mb-5" id="uebersicht">
         <div class="row">
-            <div class="col-5">
-                <h1 class="display-1">Monstera <p class="text-green">Fensterblatt</p></h1>
-                <p class="lead">Auch bekannt als Fensterblatt ist die Monstera eine wunderschöne und beliebte
-                    Zimmerpflanze,
-                    die man für ihr markantes Aussehen und ihre leichte Pflege schätzt.</p>
-                <a href="#pflege"><button type="button" class="btn btn-green">Mehr zur Pflege</button></a>
+            <div class="col-7 pe-5">
+                <h1 class="display-1 mb-3">Monstera <p class="text-green">Fensterblatt</p></h1>
+                <p class="lead mb-4">Auch bekannt als Fensterblatt ist die Monstera eine wunderschöne und beliebte
+                    Zimmerpflanze, die man für ihr markantes Aussehen und ihre leichte Pflege schätzt.</p>
+                <a href="#pflege">
+                    <button type="button" class="btn btn-green">Mehr zur Pflege</button>
+                </a>
             </div>
-            <!-- diese col-2 hab ich eingefügt, damit zwischen dem Text und dem Bild ein Abstand ist, geht vermutlich anders auch.. -->
-            <div class="col-2"></div>
-            <div class="col-5"><img src="img/monstera_plant_light.png" class="main-pic"
-                                    alt="Monstera Plant"/></div>
+            <div class="col-5">
+                <img src="img/monstera_plant_light.png" class="main-pic" alt="Monstera Plant"/>
+            </div>
         </div>
     </div>
     <!-- Herkunft -->
     <div class="container" id="herkunft">
-        <h2>Herkunft</h2>
+        <h2 class="mb-3">Herkunft</h2>
         <div class="card text-center">
             <div class="card-body">
-                <h5 class="card-title">Woher kommt die Monstera?</h5>
-                <div class="row">
+                <h5 class="card-title mb-3">Woher kommt die Monstera?</h5>
+                <div class="row mb-2">
                     <p class="card-text col">Diese Pflanze stammt ursprünglich aus den tropischen Regenwäldern Zentral-
                         und Südamerikas und ist für ihre kletternden Eigenschaften bekannt.
                         Monstera kann an Stützen oder Rankgittern hochwachsen.</p>
                     <p class="card-text col"> Somit kann die Pflanze einen echten Dschungelvibe in Ihr Zuhause bringen.
                         Aber keine Sorge, sie kann auch gut als Busch gehalten
                         werden und passt sich verschiedenen Wachstumsbedingungen an.</p>
-                    <a href="#arten" class="btn btn-green">Mehr zu den Arten</a>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <a href="#arten" class="btn btn-green fit-content">Mehr zu den Arten</a>
                 </div>
             </div>
         </div>
     </div>
     <!-- Pflege -->
     <div class="container" id="pflege">
-        <h2>Pflege</h2>
-        <div class="row">
-            <!-- diese eine Col habe ich eingefügt, damit die Icons mittig sind, geht sicher schöner auch.. -->
-            <div class="col"></div>
-            <div class="col"><img class="img-fluid small-pic" src="img/sun.png" alt="Sonne"/></div>
-            <div class="col"><img class="img-fluid small-pic" src="img/watering-can.png" alt="Gießkanne"/></div>
-            <div class="col"><img class="img-fluid small-pic" src="img/soil.png" alt="Erde"/></div>
+        <h2 class="mb-3">Pflege</h2>
+        <div class="row my-5">
+            <div class="col d-flex justify-content-center"><img class="img-fluid small-pic" src="img/sun.png" alt="Sonne"/></div>
+            <div class="col d-flex justify-content-center"><img class="img-fluid small-pic" src="img/watering-can.png" alt="Gießkanne"/></div>
+            <div class="col d-flex justify-content-center"><img class="img-fluid small-pic" src="img/soil.png" alt="Erde"/></div>
         </div>
         <div class="row">
             <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        Standort
-                    </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Die Monstera-Pflanze bevorzugt helle bis halbschattige Standorte.</div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                            Standort
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                         data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Die Monstera-Pflanze bevorzugt helle bis halbschattige Standorte.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                            Wasserbedarf
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                         data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Sie benötigt mäßige Wassergaben. Einmal pro Woche gießen und
+                            regelmäßig die Blätter mit
+                            einem feuchten Tuch
+                            abwischen, um Staub zu entfernen, reichen in der Regel aus.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                            Nährstoffreicher Boden
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                         data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Eine Mischung aus torffreier Blumenerde, Perlite und
+                            Kokosnusssubstrat ist eine gute Wahl. Diese Mischung sorgt für eine gute Drainage und
+                            belüftet die Wurzeln der Pflanze.
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        Wasserbedarf
-                    </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Sie benötigt mäßige Wassergaben. Einmal pro Woche gießen und regelmäßig die Blätter mit
-                        einem feuchten Tuch
-                        abwischen, um Staub zu entfernen, reichen in der Regel aus.</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        Nährstoffreicher Boden
-                    </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Eine Mischung aus torffreier Blumenerde, Perlite und
-                        Kokosnusssubstrat ist eine gute Wahl. Diese Mischung sorgt für eine gute Drainage und belüftet die Wurzeln der Pflanze.</div>
-                </div>
-            </div>
-        </div>
         </div>
     </div>
     <!-- Arten -->
     <div class="container" id="arten">
-        <h2>Arten</h2>
+        <h2 class="mb-3">Arten</h2>
         <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
+            <div class="col d-flex">
                 <div class="card">
                     <img src="img/monster_deliciosa.jpg" class="card-img-top" alt="Monstera Deliciosa">
                     <div class="card-body">
@@ -163,7 +176,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col d-flex">
                 <div class="card">
                     <img src="img/monstera_adansonii.jpg" class="card-img-top" alt="Monstera Adansonii">
                     <div class="card-body">
@@ -175,7 +188,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col d-flex">
                 <div class="card">
                     <img src="img/monstera_obliqua.jpg" class="card-img-top" alt="Monstera Obliqua">
                     <div class="card-body">
@@ -196,8 +209,28 @@
         <p>Dies ist ein Projekt des Studiengangs Kommunikation, Wissen, Medien an der FH Hagenberg. <br/>
             Die Website wurde umgesetzt von: Johanna Blaha, Madeleine Enser und Anna Lanz.</p>
     </div>
-</wrapper>
-
+</main>
+<!-- Footer -->
+<footer class="mt-auto">
+    <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand grow" href="#">Monstera</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link grow" href="#">Terms & Conditions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link grow py-0 py-sm-2" href="#">Privacy Policy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link grow" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+<!-- Basic JS -->
+<script type="text/javascript" src="dark_light.js"></script>
 <!-- Bootstrap JS und jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"

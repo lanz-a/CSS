@@ -1,3 +1,28 @@
+html {
+    margin: 0;
+    padding: 0;
+    min-width: fit-content;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    background-color: #444444;
+    min-height: 50px;
+    width: 100%;
+}
+a.navbar-brand {
+    color: var(--lightgreen) !important;
+}
+
+.nav-link {
+    color: white !important;
+}
+
 :root {
     --darkgreen: #002601;
     --maingreen: #034001;
@@ -15,10 +40,6 @@
 * {
     font-family: "Hanken Grotesk", sans-serif;
     box-sizing: border-box;
-}
-
-body {
-    padding: 0.25em;
 }
 
 .container {
@@ -62,4 +83,12 @@ h1{
     > h1.display-1 {
         margin-top: 1em;
     }
+}
+
+.fit-content {
+    width: fit-content !important;
+}
+
+.container {
+    margin-bottom: 5em;
 }

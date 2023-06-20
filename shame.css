@@ -38,7 +38,8 @@ p {
 */
 .accordion-button {
     &:not(.collapsed) {
-     background-color: var(--lightgreen) !important;
+         background-color: var(--lightgreen) !important;
+         color: white !important;
      }
  }
 

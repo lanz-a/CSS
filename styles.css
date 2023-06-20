@@ -80,7 +80,7 @@ h1{
         display: grid;
         grid-template-columns: 1fr;
 
-        .col-5 {
+        .col-5, .col-sm-12, .col-md-7 {
             width: 100%;
         }
 

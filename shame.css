@@ -30,7 +30,7 @@ p {
     font-weight: 600 !important;
 }
 .card {
-    background-color: var(--lightgreen) !important;
+    border: 0.2em solid var(--lightgreen) !important;
 }
 
 /*

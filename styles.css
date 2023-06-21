@@ -109,3 +109,12 @@ h1{
 .container {
     margin-bottom: 5em;
 }
+
+/* make links grow on hover */
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.2);
+}

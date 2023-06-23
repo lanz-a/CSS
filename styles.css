@@ -168,5 +168,5 @@ h1{
 .shovel {
     position: relative;
     z-index: 2;
-    left: -78px;
+    left: -50%;
 }

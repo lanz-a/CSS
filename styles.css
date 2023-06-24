@@ -84,20 +84,35 @@ h1{
         display: grid;
         grid-template-columns: 1fr;
 
-        .col-5, .col-sm-12, .col-md-7 {
-            width: 100%;
+        .col-5 {
+            width: 80vw;
         }
 
+        .col-sm-12, .col-md-7{
+            width: 100vw;
+        }
+
+        /*.branch-pic {
+            width: 80%;
+            height: auto;
+        }*/
     }
 }
 
 @media screen and (max-width: 767px){
     .la {
         flex-direction: column;
+
+        .small-pic {
+            width: 15vw;
+            height: auto;
+        }
     }
-    .small-pic {
-        width: 20vw;
-        height: auto;
+    .soil{
+        margin-left: 15vw;
+    }
+    .shovel {
+        left: -34% !important;
     }
 }
 

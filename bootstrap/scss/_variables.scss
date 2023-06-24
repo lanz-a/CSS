@@ -43,8 +43,8 @@ $pink:    #d63384 !default;
 $red:     #dc3545 !default;
 $orange:  #fd7e14 !default;
 $yellow:  #ffc107 !default;
-$green:   #198754 !default;
-$teal:    #20c997 !default;
+$green:   #002601 !default;
+$teal:    #669966 !default;
 $cyan:    #0dcaf0 !default;
 // scss-docs-end color-variables
 
@@ -406,7 +406,7 @@ $body-text-align:           null !default;
 //
 // Style anchor elements.
 
-$link-color:                              $primary !default;
+$link-color:                              $green !default;
 $link-decoration:                         underline !default;
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
@@ -477,7 +477,7 @@ $container-padding-x: $grid-gutter-width !default;
 // Define common padding and border radius sizes and more.
 
 // scss-docs-start border-variables
-$border-width:                1px !default;
+$border-width:                2px !default;
 $border-widths: (
   1: 1px,
   2: 2px,
@@ -487,8 +487,8 @@ $border-widths: (
 ) !default;
 
 $border-style:                solid !default;
-$border-color:                $gray-300 !default;
-$border-color-translucent:    rgba($black, .175) !default;
+$border-color:                $teal-500 !default;
+$border-color-translucent:    $teal !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
@@ -1234,6 +1234,7 @@ $placeholder-opacity-min:           .2 !default;
 // scss-docs-start card-variables
 $card-spacer-y:                     $spacer !default;
 $card-spacer-x:                     $spacer !default;
+$card-title-new:                    $green !default;
 $card-title-spacer-y:               $spacer * .5 !default;
 $card-border-width:                 $border-width !default;
 $card-border-color:                 var(--#{$prefix}border-color-translucent) !default;

@@ -26,11 +26,6 @@ p {
 * Müsste man in der _card.scss ändern, dann muss man nicht !important verwenden
 */
 .card-title {
-    color: var(--maingreen) !important;
-    font-weight: 600 !important;
-}
-.card {
-    border: 0.2em solid var(--lightgreen) !important;
 }
 
 /*

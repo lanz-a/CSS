@@ -72,7 +72,15 @@
   --#{$prefix}highlight-bg: #{$mark-bg};
 
   @include color-mode(dark) {
-
+    .btn-green {
+      background-color: #669966 !important;
+    }
+    header .navbar-brand {
+      color: #669966 !important;
+    }
+    .card-title {
+      color: #669966 !important;
+    }
   }
 
 }

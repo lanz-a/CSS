@@ -1,29 +1,12 @@
 /*
-* Farbe wird in -navbar.scss definiert und kann mit !important überschrieben werden
-* Zeile 70: color: var(--#{$prefix}navbar-brand-color);
+* Farben in _variables.scss anpassen
 */
 .navbar-brand{
     color: var(--maingreen) !important;
 }
 
 /*
-* Navigationsleiste sollte beim Scrollen fixiert sein - funktioniert noch nicht
-* wenn man !important hinzufügt, dann passen die Abstände zwischen den Elementen
-* in der Navigationsleiste nicht mehr
-*/
-.navbar {
-    position: fixed;
-}
-
-/*
-* Macht noch ein paar Löcher in den Text, aber Blocksatz sieht schöner aus :-)
-*/
-p {
-    text-align: justify;
-}
-
-/*
-* Müsste man in der _card.scss ändern, dann muss man nicht !important verwenden
+* Farben in _variables.scss anpassen
 */
 .card-title {
     color: var(--maingreen) !important;
@@ -34,17 +17,17 @@ p {
 }
 
 /*
-* Zeile 47 in _accordion.scss - dort ändern
-
+* Farben in _variables.scss anpassen
+*/
 .accordion-button {
     &:not(.collapsed) {
          background-color: var(--lightgreen) !important;
          color: white !important;
      }
- }*/
+ }
 
 /*
-* müsste man in der _buttons.scss bearbeiten
+* Farben in _variables.scss anpassen
 */
 .btn-green {
     color: white !important;

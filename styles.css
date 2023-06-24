@@ -79,8 +79,6 @@ h1{
     position: absolute;
 }
 
-
-
 @media screen and (max-width: 991px){
     #uebersicht .row {
         display: grid;
@@ -90,6 +88,16 @@ h1{
             width: 100%;
         }
 
+    }
+}
+
+@media screen and (max-width: 767px){
+    .la {
+        flex-direction: column;
+    }
+    .small-pic {
+        width: 20vw;
+        height: auto;
     }
 }
 

@@ -107,6 +107,10 @@ h1{
             width: 15vw;
             height: auto;
         }
+
+        .justify-content-center {
+            margin-bottom: 2em;
+        }
     }
     .soil{
         margin-left: 15vw;
@@ -148,30 +152,39 @@ h1{
 
 /*Sun spinning on hover*/
 .spin {
-    transition: transform 1s ease-in-out;
+    animation: spinning 2s infinite;
 }
-.spin:hover {
-    transform: rotate(360deg);
+
+@keyframes spinning{
+    0% {transform: rotate(0deg); }
+    10% {transform: rotate(360deg); }
+    25% {transform: rotate(0deg); }
 }
 
 /*watering can tilts on hover*/
-.tilt:hover {
-    transform: rotate(20deg);
-    transition: transform .7s ease-in-out;
-    animation-iteration-count: infinite;
+.tilt {
+    animation: watering 2s infinite;
+    animation-delay: .5s;
+}
+
+@keyframes watering {
+    0% { transform: rotate(0deg); }
+    10% {transform: rotate(20deg); }
+    30% {transform: rotate(0deg); }
 }
 
 /*Shovel in soil diggin'*/
-.shovel:hover {
-    animation: shaking 1s infinite;
+.shovel {
+    animation: shaking 2s infinite;
+    animation-delay: 1s;
 }
 
 @keyframes shaking {
     0% { transform: translate(0, 0) rotate(0deg); }
-    25% { transform: translate(5px, 5px) rotate(5deg); }
-    50% { transform: translate(0, 0) rotate(0deg); }
-    75% { transform: translate(-5px, 5px) rotate(-5deg); }
-    100% { transform: translate(0, 0) rotate(0deg); }
+    10% { transform: translate(5px, 5px) rotate(5deg); }
+    20% { transform: translate(0, 0) rotate(0deg); }
+    30% { transform: translate(-5px, 5px) rotate(-5deg); }
+    40% { transform: translate(0, 0) rotate(0deg); }
 }
 
 .row {

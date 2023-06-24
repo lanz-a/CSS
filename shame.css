@@ -24,9 +24,14 @@ p {
 
 /*
 * Müsste man in der _card.scss ändern, dann muss man nicht !important verwenden
-*/
+
 .card-title {
+    color: var(--maingreen) !important;
+    font-weight: 600 !important;
 }
+.card {
+    border: 0.2em solid var(--lightgreen) !important;
+}*/
 
 /*
 * Zeile 47 in _accordion.scss - dort ändern
@@ -40,8 +45,8 @@ p {
 
 /*
 * müsste man in der _buttons.scss bearbeiten
-*/
+
 .btn-green {
     color: white !important;
     background-color: var(--maingreen) !important;
-}
+}*/

@@ -9,25 +9,65 @@
     <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico"/>
     <!-- Basic CSS -->
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <!-- Shame CSS -->
-    <link rel="stylesheet" type="text/css" href="shame.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <!-- Basic JS -->
-    <script type="text/javascript" src="dark_light.js"></script>
 </head>
 <body>
 <!-- Header -->
 <header>
-    <div class="container mb-5">
-
-        <nav class="navbar navbar-collapse navbar-light ">
+    <div class="container">
+        <!-- Menu for desktop view -->
+        <nav class="navbar navbar-light navbar-expand-lg d-none d-lg-flex">
             <a class="navbar-brand" href="#"><img src="img/logo_80x80.png" alt="Monstera Logo">Monstera</a>
+            <div class="collapse navbar-collapse justify-content-center" id="mainNavigationDesktop">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link grow" href="#uebersicht">Übersicht</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link grow" href="#herkunft">Herkunft</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link grow" href="#pflege">Pflege</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link grow" href="#arten">Arten</a>
+                    </li>
+                </ul>
+            </div>
             <div class="d-flex align-items-center ml-auto">
                 <div class="dropdown me-2">
+                    <button type="button" class="btn btn-secondary dropdown-toggle mx-2" id="languageDropdownDesktop"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        DE
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="languageDropdownDesktop">
+                        <li><a class="dropdown-item" href="#">DE</a></li>
+                        <li><a class="dropdown-item" href="#">EN</a></li>
+                    </ul>
+                </div>
+                <button class="btn btn-light mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                         class="bi bi-brightness-high" viewBox="0 0 16 16">
+                        <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Menu for mobile view -->
+        <nav class="navbar navbar-light navbar-expand-lg d-lg-none">
+            <a class="navbar-brand" href="#"><img src="img/logo_80x80.png" alt="Monstera Logo">Monstera</a>
+            <div class="d-flex align-items-center ml-auto">
+                <button class="btn btn-light mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                         class="bi bi-brightness-high" viewBox="0 0 16 16">
+                        <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+                    </svg>
+                </button>
+                <div class="dropdown me-2">
                     <button type="button" class="btn btn-secondary dropdown-toggle mx-2" id="languageDropdown"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         DE
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="languageDropdown">
@@ -35,22 +75,15 @@
                         <li><a class="dropdown-item" href="#">EN</a></li>
                     </ul>
                 </div>
-                <button class="btn btn-light" id="modeToggle">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                         class="bi bi-brightness-high" viewBox="0 0 16 16">
-                        <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-                    </svg>
-                </button>
             </div>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNavigation"
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation"
                     aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="mainNavigation">
-
-                <ul class="navbar-nav ms-auto">
+            <div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link grow " href="#uebersicht">Übersicht</a>
+                        <a class="nav-link grow" href="#uebersicht">Übersicht</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link grow" href="#herkunft">Herkunft</a>
@@ -66,10 +99,11 @@
         </nav>
     </div>
 </header>
+
 <!-- Main -->
 <main>
-    <!-- Übersicht -->
-    <div class="container mb-5" id="uebersicht">
+    <!-- Overview -->
+    <div class="container" id="uebersicht">
         <div class="row">
             <div class="col-sm-12 col-md-7">
                 <h1 class="display-1 mb-3">Monstera <p class="text-green">Fensterblatt</p></h1>
@@ -80,12 +114,11 @@
                 </a>
             </div>
             <div class="col-5">
-                <img src="img/branch.png" class="branch-pic" alt="Branch"/>
-                <img src="img/monstera_plant_light.png" class="main-pic" alt="Monstera Plant"/>
+                <img src="img/monstera_plant_light.png" class="main-img" alt="Monstera Plant"/>
             </div>
         </div>
     </div>
-    <!-- Herkunft -->
+    <!-- Origin -->
     <div class="container" id="herkunft">
         <h2 class="mb-3">Herkunft</h2>
         <div class="card text-center p-3">
@@ -100,7 +133,9 @@
                         werden und passt sich verschiedenen Wachstumsbedingungen an.</p>
                 </div>
                 <div class="row d-flex justify-content-center">
-                    <a href="#arten" class="btn btn-green fit-content">Mehr zu den Arten</a>
+                    <a href="#arten">
+                        <button class="btn btn-green">Mehr zu den Arten</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -131,20 +166,18 @@
             </button>
         </div>
     </div>
-
-    <!-- Pflege -->
+    <!-- Care -->
     <div class="container" id="pflege">
         <h2 class="mb-3">Pflege</h2>
         <div class="row my-5 la">
-            <div class="col d-flex justify-content-center"><img class="img-fluid small-pic spin" src="img/sun.png"
+            <div class="col d-flex justify-content-center"><img class="img-fluid icon spin" src="img/sun.png"
                                                                 alt="Sonne"/></div>
-            <div class="col d-flex justify-content-center"><img class="img-fluid small-pic tilt"
-                                                                src="img/watering-can.png" alt="Gießkanne"/></div>
-
+            <div class="col d-flex justify-content-center"><img class="watering-can-img img-fluid icon tilt"
+                                                                src="img/watering-can_light.png" alt="Gießkanne"/></div>
             <div class="col d-flex justify-content-center">
                 <div class="layer">
-                    <img class="img-fluid small-pic soil" src="img/soil.png" alt="Erde"/>
-                    <img class="img-fluid small-pic shovel" src="img/shovel.png" alt="Schaufel"/>
+                    <img class="soil-img img-fluid icon soil" src="img/soil.png" alt="Erde"/>
+                    <img class="shovel-img img-fluid icon shovel" src="img/shovel_light.png" alt="Schaufel"/>
                 </div>
             </div>
         </div>
@@ -200,13 +233,13 @@
             </div>
         </div>
     </div>
-    <!-- Arten -->
+    <!-- Species -->
     <div class="container" id="arten">
         <h2 class="mb-3">Arten</h2>
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col d-flex">
                 <div class="card">
-                    <img src="img/monster_deliciosa.jpg" class="card-img-top" alt="Monstera Deliciosa">
+                    <img src="img/monster_deliciosa.jpg" alt="Monstera Deliciosa">
                     <div class="card-body">
                         <h5 class="card-title">Monstera Deliciosa</h5>
                         <p class="card-text">Die Monstera Deliciosa ist eine der bekanntesten und beliebtesten Arten der
@@ -218,7 +251,7 @@
             </div>
             <div class="col d-flex">
                 <div class="card">
-                    <img src="img/monstera_adansonii.jpg" class="card-img-top" alt="Monstera Adansonii">
+                    <img src="img/monstera_adansonii.jpg" alt="Monstera Adansonii">
                     <div class="card-body">
                         <h5 class="card-title">Monstera Adansonii</h5>
                         <p class="card-text">Die Monstera Adansonii, auch bekannt als "Fensterblatt", ist eine charmante
@@ -230,7 +263,7 @@
             </div>
             <div class="col d-flex">
                 <div class="card">
-                    <img src="img/monstera_obliqua.jpg" class="card-img-top" alt="Monstera Obliqua">
+                    <img src="img/monstera_obliqua.jpg" alt="Monstera Obliqua">
                     <div class="card-body">
                         <h5 class="card-title">Monstera Obliqua</h5>
                         <p class="card-text">Die Monstera Obliqua, auch als "Schweizer Käsewein" bekannt,
@@ -243,6 +276,7 @@
             </div>
         </div>
     </div>
+
     <!-- Disclaimer -->
     <div class="container">
         <h2>Disclaimer</h2>
@@ -250,6 +284,7 @@
             Die Website wurde umgesetzt von: Johanna Blaha, Madeleine Enser und Anna Lanz.</p>
     </div>
 </main>
+
 <!-- Footer -->
 <footer class="mt-auto">
     <nav class="navbar navbar-expand-sm">
@@ -270,10 +305,12 @@
     </nav>
 </footer>
 
-<!-- Bootstrap JS und jQuery -->
+<!-- Bootstrap JS and jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+<!-- Basic JS -->
+<script type="text/javascript" src="dark_light.js"></script>
 </body>
 </html>

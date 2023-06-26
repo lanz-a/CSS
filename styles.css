@@ -1,4 +1,30 @@
-@import "bootstrap/scss/_variables.scss";
+/* GENERAL STYLING */
+@font-face {
+    font-family: Hanken Grotesk;
+    src: url(fonts/HankenGrotesk-Regular.ttf) format('truetype');
+}
+
+* {
+    font-family: "Hanken Grotesk", sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --darkgreen: #002601;
+    --lightgreen: #669966;
+    --yellow: #E2C444;
+    --orange: #BB6A00;
+    --brown: #591902;
+    --blue: #1387C4;
+    --lightgrey: #D9D7D7;
+}
+
+/* HTML-TAG STYLING */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
 html {
     margin: 0;
@@ -6,10 +32,9 @@ html {
     min-width: fit-content;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+h1 {
+    font-family: "Hanken Grotesk",sans-serif;
+    font-weight: 800;
 }
 
 p {
@@ -22,111 +47,24 @@ footer {
     width: 100%;
 }
 
-footer a.navbar-brand {
-    color: var(--lightgreen) !important;
-}
-
 footer a.nav-link {
-    color: white !important;
+    color: white;
+    margin: 0 .5em 0 .5em;
+
+    &:hover {
+         color: white;
+     }
 }
 
-.lead {
-    padding-right: 10em;
-}
-
-:root {
-    --darkgreen: #002601;
-    --lightgreen: #034001;
-    --lightgreen: #669966;
-    --yellow: #E2C444;
-    --orange: #BB6A00;
-    --brown: #591902;
-    --blue: #1387C4;
-    --lightgrey: #D9D7D7;
-}
-
-@font-face {
-    font-family: Hanken Grotesk;
-    src: url(fonts/HankenGrotesk-Regular.ttf) format('truetype');
-}
-
-* {
-    font-family: "Hanken Grotesk", sans-serif;
-    box-sizing: border-box;
+/* CLASS STYLING */
+.navbar .navbar-brand {
+    color: var(--lightgreen);
 }
 
 .container {
     margin-top: 1.2em;
-}
-
-h1{
-    font-family: "Hanken Grotesk",sans-serif;
-    font-weight: 800;
-}
-
-.text-green{
-    color: var(--lightgreen);
-}
-
-.main-pic{
-    width: 100%;
-    height: auto;
-    z-index: 1;
-    position: relative;
-}
-
-.branch-pic {
-    width: 40%;
-    height: auto;
-    right: 0;
-    z-index: 2;
-    position: absolute;
-}
-
-@media screen and (max-width: 991px){
-    #uebersicht .row {
-        display: grid;
-        grid-template-columns: 1fr;
-
-        .col-5 {
-            width: 80vw;
-        }
-
-        .col-sm-12, .col-md-7{
-            width: 100vw;
-        }
-
-        /*.branch-pic {
-            width: 80%;
-            height: auto;
-        }*/
-    }
-}
-
-@media screen and (max-width: 767px){
-    .la {
-        flex-direction: column;
-
-        .small-pic {
-            width: 15vw;
-            height: auto;
-        }
-
-        .justify-content-center {
-            margin-bottom: 2em;
-        }
-    }
-    .soil{
-        margin-left: 15vw;
-    }
-    .shovel {
-        left: -34% !important;
-    }
-}
-
-.small-pic {
-    width: 5vw;
-    height: auto;
+    margin-bottom: 5em;
+    overflow: visible;
 }
 
 .col-5 {
@@ -137,62 +75,37 @@ h1{
     }
 }
 
-.fit-content {
-    width: fit-content !important;
+.text-green {
+    color: var(--lightgreen);
 }
 
-.container {
-    margin-bottom: 5em;
+.lead {
+    padding-right: 10em;
 }
 
-/* make links grow on hover */
-.grow {
-    transition: all .2s ease-in-out;
-}
-
-.grow:hover {
-    transform: scale(1.2);
-}
-
-/*Sun spinning on hover*/
-.spin {
-    animation: spinning 2s infinite;
-}
-
-@keyframes spinning{
-    0% {transform: rotate(0deg); }
-    10% {transform: rotate(360deg); }
-    25% {transform: rotate(0deg); }
-}
-
-/*watering can tilts on hover*/
-.tilt {
-    animation: watering 2s infinite;
-    animation-delay: .5s;
-}
-
-@keyframes watering {
-    0% { transform: rotate(0deg); }
-    10% {transform: rotate(20deg); }
-    30% {transform: rotate(0deg); }
-}
-
-/*Shovel in soil diggin'*/
-.shovel {
-    animation: shaking 2s infinite;
-    animation-delay: 1s;
-}
-
-@keyframes shaking {
-    0% { transform: translate(0, 0) rotate(0deg); }
-    10% { transform: translate(5px, 5px) rotate(5deg); }
-    20% { transform: translate(0, 0) rotate(0deg); }
-    30% { transform: translate(-5px, 5px) rotate(-5deg); }
-    40% { transform: translate(0, 0) rotate(0deg); }
-}
-
-.row {
+.main-img {
+    width: 100%;
+    height: auto;
+    z-index: 1;
     position: relative;
+}
+
+.btn.btn-green {
+    color: white;
+    background-color: var(--lightgreen);
+    box-shadow: 0 0 40px 40px var(--lightgreen) inset, 0 0 0 0 var(--lightgreen);
+    width: fit-content;
+
+    &:hover {
+         color: var(--lightgreen);
+         border: 0.1em solid var(--lightgreen);
+         box-shadow: 0 0 10px 0 var(--lightgreen), 0 0 10px 4px var(--lightgreen);
+     }
+}
+
+.icon {
+    width: 5vw;
+    height: auto;
 }
 
 .layer {
@@ -200,6 +113,62 @@ h1{
     height: auto;
 }
 
+.accordion .accordion-button {
+    &:not(.collapsed) {
+         background-color: var(--lightgreen);
+         color: white;
+     }
+
+    &:focus {
+         box-shadow: none;
+     }
+}
+
+.container .card {
+    overflow: hidden;
+    border: 0.2em solid var(--lightgreen);
+}
+
+.card .card-title {
+    color: var(--lightgreen);
+    font-weight: 600;
+}
+
+/* ANIMATIONS */
+/* Make links grow on hover */
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+/* Sun spinning on hover */
+.spin {
+    animation: spinning 2s infinite;
+}
+
+@keyframes spinning {
+    0% {transform: rotate(0deg); }
+    10% {transform: rotate(360deg); }
+    25% {transform: rotate(0deg); }
+}
+
+/* Watering can tilts on hover */
+.tilt {
+    animation: watering 2s infinite;
+    animation-delay: .5s;
+}
+
+@keyframes watering {
+    0% { transform: rotate(0deg); }
+    25% {transform: rotate(20deg); }
+    50% {transform: rotate(0deg); }
+}
+
+/* Shovel in soil diggin' */
 .soil {
     position: relative;
     z-index: 1;
@@ -209,4 +178,38 @@ h1{
     position: relative;
     z-index: 2;
     left: -50%;
+    animation: shaking 2s infinite;
+    animation-delay: 1s;
+}
+
+@keyframes shaking {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    15% { transform: translate(5px, 5px) rotate(5deg); }
+    25% { transform: translate(0, 0) rotate(0deg); }
+    35% { transform: translate(-5px, 5px) rotate(-5deg); }
+    45% { transform: translate(0, 0) rotate(0deg); }
+}
+
+/* MEDIA QUERIES*/
+@media screen and (max-width: 767px){
+    .la {
+        flex-direction: column;
+
+        .icon {
+            width: 15vw;
+            height: auto;
+        }
+
+        .col {
+            margin-bottom: 2em;
+        }
+    }
+
+    .soil {
+        margin-left: 15vw;
+    }
+
+    .shovel {
+        left: -34%;
+    }
 }

@@ -2,14 +2,14 @@
 * Farben in _variables.scss anpassen
 */
 .navbar-brand{
-    color: var(--maingreen) !important;
+    color: var(--lightgreen) !important;
 }
 
 /*
 * Farben in _variables.scss anpassen
 */
 .card-title {
-    color: var(--maingreen) !important;
+    color: var(--lightgreen) !important;
     font-weight: 600 !important;
 }
 .card {
@@ -31,5 +31,5 @@
 */
 .btn-green {
     color: white !important;
-    background-color: var(--maingreen) !important;
+    background-color: var(--lightgreen) !important;
 }

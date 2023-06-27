@@ -250,3 +250,8 @@ footer a.nav-link {
         left: -34%;
     }
 }
+@media screen and (max-width: 576px){
+    .col-5 {
+        margin-bottom: -20em;
+    }
+}

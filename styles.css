@@ -61,6 +61,10 @@ footer a.nav-link {
     color: var(--lightgreen);
 }
 
+.navbar-collapse {
+    text-align: center;
+}
+
 .container {
     margin-top: 1.2em;
     margin-bottom: 5em;
@@ -68,19 +72,19 @@ footer a.nav-link {
 }
 
 .col-5 {
-    margin-top: 5em;
+    margin: -10em 0 -38em 0;
 
     > h1.display-1 {
-        margin-top: 1em;
+        margin-top: 2em;
     }
-}
-
-.text-green {
-    color: var(--lightgreen);
 }
 
 .lead {
     padding-right: 10em;
+}
+
+.text-green {
+    color: var(--lightgreen);
 }
 
 .main-img {
@@ -88,6 +92,14 @@ footer a.nav-link {
     height: auto;
     z-index: 1;
     position: relative;
+}
+
+.branch-img {
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    position: relative;
+    top: -50%;
 }
 
 .btn.btn-green {
@@ -191,8 +203,35 @@ footer a.nav-link {
 }
 
 /* MEDIA QUERIES*/
-@media screen and (max-width: 767px){
-    .la {
+@media screen and (max-width: 1200px){
+    .branch-img {
+        top: -43%;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .branch-img {
+        top: -32%;
+    }
+    .lead {
+        padding-right: 2em;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .branch-img {
+        top: -50%;
+    }
+    .lead {
+        padding-right: 0em;
+    }
+    .col-5 {
+        width: 100vw !important;
+        height: auto;
+        padding-top: 3em;
+        margin-bottom: -35em;
+    }
+    .icon--col {
         flex-direction: column;
 
         .icon {
@@ -204,11 +243,9 @@ footer a.nav-link {
             margin-bottom: 2em;
         }
     }
-
     .soil {
         margin-left: 15vw;
     }
-
     .shovel {
         left: -34%;
     }

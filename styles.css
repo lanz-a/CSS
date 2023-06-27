@@ -213,12 +213,15 @@ ul.dropdown-menu {
     #uebersicht {
         margin-bottom: 3em;
     }
+
     .lead {
         padding-right: 0;
     }
+
     .row {
         justify-content: center;
     }
+
     div .col-5 {
         .main-img {
             margin-top: 2em;
@@ -228,20 +231,23 @@ ul.dropdown-menu {
             display: none;
         }
     }
+
     .icon--col {
         flex-direction: column;
         .icon {
-            width: 15vw;
+            width: 30vw;
             height: auto;
         }
         .col {
             margin-bottom: 2em;
         }
     }
+
     .soil {
-        margin-left: 15vw;
+        margin-left: 30vw;
     }
+
     .shovel {
-        left: -34%;
+        left: -38%;
     }
 }

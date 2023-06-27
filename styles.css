@@ -159,9 +159,9 @@ ul.dropdown-menu {
 }
 
 @keyframes spinning {
-    0% {transform: rotate(0deg); }
-    10% {transform: rotate(360deg); }
-    25% {transform: rotate(0deg); }
+    0% {transform: rotate(0deg);}
+    10% {transform: rotate(360deg);}
+    25% {transform: rotate(0deg);}
 }
 
 /* Watering can tilts on hover */
@@ -171,9 +171,9 @@ ul.dropdown-menu {
 }
 
 @keyframes watering {
-    0% { transform: rotate(0deg); }
-    25% {transform: rotate(20deg); }
-    50% {transform: rotate(0deg); }
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(20deg);}
+    50% {transform: rotate(0deg);}
 }
 
 /* Shovel in soil diggin' */
@@ -199,27 +199,37 @@ ul.dropdown-menu {
 }
 
 /* MEDIA QUERIES*/
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
     .lead {
         padding-right: 2em;
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
+    #uebersicht {
+        margin-bottom: 3em;
+    }
     .lead {
         padding-right: 0;
     }
+    .row {
+        justify-content: center;
+    }
     div .col-5 {
-        padding-top: 3em;
+        .main-img {
+            margin-top: 2em;
+            align-self: center;
+        }
+        .branch-img {
+            display: none;
+        }
     }
     .icon--col {
         flex-direction: column;
-
         .icon {
             width: 15vw;
             height: auto;
         }
-
         .col {
             margin-bottom: 2em;
         }

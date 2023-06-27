@@ -19,32 +19,32 @@
     <div class="container">
         <!-- Menu for desktop view -->
         <nav class="navbar navbar-light navbar-expand-lg d-none d-lg-flex">
-            <a class="navbar-brand" href="#"><img src="img/logo_80x80.png" alt="Monstera Logo">Monstera</a>
+            <a class="navbar-brand col-2" href="#"><img src="img/logo_80x80.png" alt="Monstera Logo">Monstera</a>
             <div class="collapse navbar-collapse justify-content-center" id="mainNavigationDesktop">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
+                    <li class="nav-item mx-1">
                         <a class="nav-link grow" href="#uebersicht">Übersicht</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-1">
                         <a class="nav-link grow" href="#herkunft">Herkunft</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-1">
                         <a class="nav-link grow" href="#pflege">Pflege</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-1">
                         <a class="nav-link grow" href="#arten">Arten</a>
                     </li>
                 </ul>
             </div>
-            <div class="d-flex align-items-center ml-auto">
+            <div class="d-flex col-2 justify-content-end ml-auto">
                 <div class="dropdown me-2">
                     <button type="button" class="btn btn-secondary dropdown-toggle mx-2" id="languageDropdownDesktop"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         DE
                     </button>
-                    <ul class="dropdown-menu" aria-labelledby="languageDropdownDesktop">
-                        <li><a class="dropdown-item" href="#">DE</a></li>
-                        <li><a class="dropdown-item" href="#">EN</a></li>
+                    <ul class="dropdown-menu mx-2" aria-labelledby="languageDropdownDesktop">
+                        <li><a class="dropdown-item text-center" href="#">DE</a></li>
+                        <li><a class="dropdown-item text-center" href="#">EN</a></li>
                     </ul>
                 </div>
                 <button class="btn btn-light mode-toggle">
@@ -58,15 +58,9 @@
         <!-- Menu for mobile view -->
         <nav class="navbar navbar-light navbar-expand-lg d-lg-none">
             <a class="navbar-brand" href="#"><img src="img/logo_80x80.png" alt="Monstera Logo">Monstera</a>
-            <div class="d-flex align-items-center ml-auto">
-                <button class="btn btn-light mode-toggle">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                         class="bi bi-brightness-high" viewBox="0 0 16 16">
-                        <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
-                    </svg>
-                </button>
+            <div class="d-flex">
                 <div class="dropdown me-2">
-                    <button type="button" class="btn btn-secondary dropdown-toggle mx-2" id="languageDropdown"
+                    <button type="button" class="btn btn-secondary dropdown-toggle" id="languageDropdown"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         DE
                     </button>
@@ -75,12 +69,18 @@
                         <li><a class="dropdown-item" href="#">EN</a></li>
                     </ul>
                 </div>
+                <button class="btn btn-light mode-toggle me-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                         class="bi bi-brightness-high" viewBox="0 0 16 16">
+                        <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+                    </svg>
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation"
+                        aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation"
-                    aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="mainNavigation">
+            <div class="collapse navbar-collapse mt-3" id="mainNavigation">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link grow" href="#uebersicht">Übersicht</a>
@@ -114,8 +114,8 @@
                 </a>
             </div>
             <div class="col-5">
-                <img src="img/monstera_plant_light.png" class="main-img" alt="Monstera Plant"/>
                 <img src="img/branch_overlay.png" class="branch-img" alt="Branch"/>
+                <img src="img/monstera_plant_light.png" class="main-img" alt="Monstera Plant"/>
             </div>
         </div>
     </div>

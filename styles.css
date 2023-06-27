@@ -1,9 +1,9 @@
-/* GENERAL STYLING */
 @font-face {
     font-family: Hanken Grotesk;
     src: url(fonts/HankenGrotesk-Regular.ttf) format('truetype');
 }
 
+/* GENERAL STYLING */
 * {
     font-family: "Hanken Grotesk", sans-serif;
     box-sizing: border-box;
@@ -65,18 +65,14 @@ footer a.nav-link {
     text-align: center;
 }
 
+ul.dropdown-menu {
+    --bs-dropdown-min-width: 63px;
+}
+
 .container {
     margin-top: 1.2em;
     margin-bottom: 5em;
     overflow: visible;
-}
-
-.col-5 {
-    margin: -10em 0 -38em 0;
-
-    > h1.display-1 {
-        margin-top: 2em;
-    }
 }
 
 .lead {
@@ -95,11 +91,11 @@ footer a.nav-link {
 }
 
 .branch-img {
-    width: 100%;
+    right: 0;
+    width: 50%;
     height: auto;
     z-index: 2;
-    position: relative;
-    top: -50%;
+    position: absolute;
 }
 
 .btn.btn-green {
@@ -203,33 +199,18 @@ footer a.nav-link {
 }
 
 /* MEDIA QUERIES*/
-@media screen and (max-width: 1200px){
-    .branch-img {
-        top: -43%;
-    }
-}
-
 @media screen and (max-width: 992px){
-    .branch-img {
-        top: -32%;
-    }
     .lead {
         padding-right: 2em;
     }
 }
 
 @media screen and (max-width: 768px){
-    .branch-img {
-        top: -50%;
-    }
     .lead {
-        padding-right: 0em;
+        padding-right: 0;
     }
-    .col-5 {
-        width: 100vw !important;
-        height: auto;
+    div .col-5 {
         padding-top: 3em;
-        margin-bottom: -35em;
     }
     .icon--col {
         flex-direction: column;
@@ -248,10 +229,5 @@ footer a.nav-link {
     }
     .shovel {
         left: -34%;
-    }
-}
-@media screen and (max-width: 576px){
-    .col-5 {
-        margin-bottom: -20em;
     }
 }

@@ -232,6 +232,12 @@ ul.dropdown-menu {
         }
     }
 
+    .icon {
+        width: 10vh;
+    }
+}
+
+@media screen and (max-width: 576px) {
     .icon--col {
         flex-direction: column;
         .icon {
